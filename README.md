@@ -63,3 +63,24 @@ $ curl 'http://localhost:8003/orders/1'
 Ensure RabbitMQ, PostgreSQL and Redis are running and `config.yaml` files for each service are configured correctly.
 
 `$ make coverage`
+
+## FELK
+
+- FELK stands for Filebeat,Elasticsearch, Logstash, Kibana
+
+### Filebeat
+
+- In the file filebeat.yml, there are codes for reading .log files and instant docker inputs
+- The docker inputs are live-running containers except running ELK containers since they have been supported by Kibana
+- The filebeat.autodiscover mode can identify all running containers
+  Ports used for config. :
+
+* 5044: Logstash
+* 9200: Elasticsearch
+* 5601: Kibana
+
+### Kibana
+
+- Type the localhost:5061 in the browser to go as an entry point to Kibana interface.
+- For default the id and password corresponding to "elastic" and "password".
+- Remember to change reload in Kibana from default "last 15 minutes" to "Year to date" to observe the whole example .log data

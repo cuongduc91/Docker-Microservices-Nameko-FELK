@@ -62,7 +62,9 @@ $ curl 'http://localhost:8003/orders/1'
 
 Ensure RabbitMQ, PostgreSQL and Redis are running and `config.yaml` files for each service are configured correctly.
 
-`$ make coverage`
+```
+$ make coverage
+```
 
 ## FELK
 

@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 services:
   rabbit:
     container_name: nameko-example-rabbitmq

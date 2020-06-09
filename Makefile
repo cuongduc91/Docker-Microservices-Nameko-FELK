@@ -6,7 +6,7 @@ install-dependencies:
 	pip install -U -e "orders/.[dev]"
 	pip install -U -e "products/.[dev]"
 	pip install -U -e "gateway/.[dev]"
-
+	
 # test
 
 coverage-html:

@@ -5,6 +5,7 @@ RUN apt-get update && \
 
 RUN pip3 install --upgrade pip
 RUN pip3 install virtualenv
+RUN pip3 install flake8
 
 RUN virtualenv -p python3 /appenv
 
@@ -23,7 +24,7 @@ RUN apt-get update && \
   libgflags-dev libgtest-dev clang libc++-dev automake git libpq-dev
 
 RUN pip install auditwheel
-
+RUN pip install flake8
 COPY . /application
 
 ENV PIP_WHEEL_DIR=/application/wheelhouse

@@ -321,7 +321,3 @@ $ curl 'http://localhost/orders/1'
   ]
 }
 ```
-
-## Wrap-up
-
-Running Nameko services in Kubernetes is really simple. Please get familiar with Helm Charts included in this repository and try adding one of your own.
